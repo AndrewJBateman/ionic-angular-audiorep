@@ -38,6 +38,8 @@ export class HomePage {
   constructor() {
   }
 
+  // function to stop playing existing track (if playing) then play audio file.
+  // run update progress function so % complete indicator is updated.
   start(track: Track) {
     if (this.player) {
       this.player.stop();
@@ -58,7 +60,7 @@ export class HomePage {
     this.player.play();
   }
 
-  togglePlayer(pause) {
+  togglePlayer(pause: any) {
     this.isPlaying = !pause;
     if (pause) {
       this.player.pause();
