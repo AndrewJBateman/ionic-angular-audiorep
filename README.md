@@ -1,45 +1,48 @@
-# Ionic Angular Audio Reproduction
+# :zap: Ionic Angular Audio Reproduction
 
-App to play mp3 audio files. This is another great tutorial from [Simon Grimm 'How to Build a Simple Ionic 4 Audio Player'](https://www.youtube.com/watch?v=d_rKawKDq58).
+* App to play mp3 audio files. This is another great tutorial from [Simon Grimm 'How to Build a Simple Ionic 4 Audio Player'](https://www.youtube.com/watch?v=d_rKawKDq58).
 
-## Table of contents
+## :page_facing_up: Table of contents
 
-* [General info](#general-info)
-* [Screenshots](#screenshots)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Features](#features)
-* [Status](#status)
-* [Inspiration](#inspiration)
-* [Contact](#contact)
+* [:zap: Ionic Angular Audio Reproduction](#zap-ionic-angular-audio-reproduction)
+  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal_strength: Technologies](#signal_strength-technologies)
+  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status & To-do list](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:envelope: Contact](#envelope-contact)
 
-## General info
+## :books: General info
 
 * Uses the [Howler](https://www.npmjs.com/package/howler) audio library to play mp3 files.
+* Updated to latest Ionic5 and Angular10 + dependencies
 
-## Screenshots
+## :camera: Screenshots
 
 ![screenshot](./img/audio-player.png)
 
-## Technologies
+## :signal_strength: Technologies
 
-* [Ionic v5.0.0](https://ionicframework.com/)
-* [Ionic/angular v4.7.1](https://ionicframework.com/)
-* [Angular v8.1.2](https://angular.io/)
-* [Howler v2.1.2](https://www.npmjs.com/package/howler)
+* [Ionic v5](https://ionicframework.com/)
+* [Ionic/angular v5](https://ionicframework.com/)
+* [Angular v10](https://angular.io/)
+* [Howler v2](https://www.npmjs.com/package/howler)
 
-## Setup
+## :floppy_disk: Setup
 
 * To start the server on _localhost://8100_ type: 'ionic serve'
 * To start the server on a mobile using Ionic devapp and connected via wifi, type: 'ionic serve --devapp'
 * The Ionic DevApp was installed on an Android device from the Google Play app store.
 
-## Code Examples
+## :computer: Code Examples
 
 * function to start playing a track using the Howler audio library. Stops any previous track that was playing.
 
 ```typescript
-
   activeTrack: Track = null;
   player: Howl = null;
   isPlaying = false;
@@ -65,20 +68,19 @@ App to play mp3 audio files. This is another great tutorial from [Simon Grimm 'H
   }
 ```
 
-## Features
+## :cool: Features
 
 * Howler audio library API defaults to the [W3C Web Audio API](https://webaudio.github.io/web-audio-api/) and falls back to [HTML5 Audio](https://html.spec.whatwg.org/multipage/media.html#the-audio-element).
 
-## Status & To-do list
+## :clipboard: Status & To-do list
 
-* Status: Working.
+* Status: Working
+* To-do: nothing
 
-* To-do: Increase the audio library in this app - currently only 3 files listed. Add functionality.
-
-## Inspiration
+## :clap: Inspiration
 
 * [Simon Grimm 'How to Build a Simple Ionic 4 Audio Player'](https://www.youtube.com/watch?v=d_rKawKDq58).
 
-## Contact
+## :envelope: Contact
 
-Repo created by [ABateman](https://www.andrewbateman.org) - feel free to contact me!
+* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
