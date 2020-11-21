@@ -1,6 +1,7 @@
 # :zap: Ionic Angular Audio Reproduction
 
-* App to play mp3 audio files. This is another great tutorial from [Simon Grimm 'How to Build a Simple Ionic 4 Audio Player'](https://www.youtube.com/watch?v=d_rKawKDq58).
+* App to play mp3 audio files.
+* Code from [Simon Grimm](https://www.youtube.com/channel/UCZZPgUIorPao48a1tBYSDgg) - see [:clap: Inspiration](#clap-inspiration) below
 
 ## :page_facing_up: Table of contents
 
@@ -19,7 +20,7 @@
 ## :books: General info
 
 * Uses the [Howler](https://www.npmjs.com/package/howler) audio library to play mp3 files.
-* Updated to latest Ionic5 and Angular10 + dependencies
+* Updated to latest Ionic5 and Angular11 + dependencies
 
 ## :camera: Screenshots
 
@@ -29,7 +30,7 @@
 
 * [Ionic v5](https://ionicframework.com/)
 * [Ionic/angular v5](https://ionicframework.com/)
-* [Angular v10](https://angular.io/)
+* [Angular v11](https://angular.io/)
 * [Howler v2](https://www.npmjs.com/package/howler)
 
 ## :floppy_disk: Setup
@@ -75,7 +76,7 @@
 ## :clipboard: Status & To-do list
 
 * Status: Working
-* To-do: nothing
+* To-do: Nothing
 
 ## :clap: Inspiration
 
