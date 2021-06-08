@@ -2,6 +2,12 @@
 
 * App to play mp3 audio files.
 * Code from [Simon Grimm](https://www.youtube.com/channel/UCZZPgUIorPao48a1tBYSDgg) - see [:clap: Inspiration](#clap-inspiration) below
+* **Note:** to open web links in a new window use: _ctrl+click on link_
+
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-angular-audiorep?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/ionic-angular-audiorep?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/ionic-angular-audiorep?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/ionic-angular-audiorep?style=plastic)
 
 ## :page_facing_up: Table of contents
 
@@ -20,7 +26,6 @@
 ## :books: General info
 
 * Uses the [Howler](https://www.npmjs.com/package/howler) audio library to play mp3 files.
-* Updated to latest Ionic5 and Angular11 + dependencies
 
 ## :camera: Screenshots
 
@@ -30,7 +35,7 @@
 
 * [Ionic v5](https://ionicframework.com/)
 * [Ionic/angular v5](https://ionicframework.com/)
-* [Angular v11](https://angular.io/)
+* [Angular v12](https://angular.io/)
 * [Howler v2](https://www.npmjs.com/package/howler)
 
 ## :floppy_disk: Setup
@@ -82,6 +87,10 @@
 
 * [Simon Grimm 'How to Build a Simple Ionic 4 Audio Player'](https://www.youtube.com/watch?v=d_rKawKDq58).
 
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://www.andrewbateman.org) - you are welcome to [send me a message](https://andrewbateman.org/contact)
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
