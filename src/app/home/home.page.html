@@ -36,7 +36,7 @@
 			</ion-col>
 			<ion-col size="12" class="ion-text-center">
 				<ion-button fill="clear" (click)="prev()" color="light">
-					<ion-icon slot="icon-only" name="skip-backward"></ion-icon>
+					<ion-icon slot="icon-only" name="play-skip-back-outline"></ion-icon>
 				</ion-button>
 
 				<ion-button
@@ -45,7 +45,7 @@
 					*ngIf="!isPlaying"
 					color="light"
 				>
-					<ion-icon slot="icon-only" name="play"></ion-icon>
+					<ion-icon slot="icon-only" name="play-outline"></ion-icon>
 				</ion-button>
 
 				<ion-button
@@ -54,11 +54,11 @@
 					*ngIf="isPlaying"
 					color="light"
 				>
-					<ion-icon slot="icon-only" name="pause"></ion-icon>
+					<ion-icon slot="icon-only" name="pause-outline"></ion-icon>
 				</ion-button>
 
 				<ion-button fill="clear" (click)="next()" color="light">
-					<ion-icon slot="icon-only" name="skip-forward"></ion-icon>
+					<ion-icon slot="icon-only" name="play-skip-forward-outline"></ion-icon>
 				</ion-button>
 			</ion-col>
 		</ion-row>
