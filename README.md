@@ -1,7 +1,7 @@
 # :zap: Ionic Angular Audio Reproduction
 
-* App to play mp3 audio files.
-* Code from [Simon Grimm](https://www.youtube.com/channel/UCZZPgUIorPao48a1tBYSDgg) - see [:clap: Inspiration](#clap-inspiration) below
+* Ionic-Angular app to play mp3 audio files.
+* Code from [Simon Grimm](https://www.youtube.com/channel/UCZZPgUIorPao48a1tBYSDgg) - see [:clap: Inspiration](#clap-inspiration) below. Updated to latest Ionic/Angular + dependencies. Strict mode enabled which required strict initialisation of properties, e.g. range, player to avoid errors.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-angular-audiorep?style=plastic)
@@ -33,9 +33,9 @@
 
 ## :signal_strength: Technologies
 
-* [Ionic v5](https://ionicframework.com/)
-* [Ionic/angular v5](https://ionicframework.com/)
-* [Angular v12](https://angular.io/)
+* [Ionic v6](https://ionicframework.com/)
+* [Ionic/angular v6](https://ionicframework.com/)
+* [Angular v13](https://angular.io/)
 * [Howler v2](https://www.npmjs.com/package/howler)
 
 ## :floppy_disk: Setup
@@ -46,12 +46,16 @@
 
 ## :computer: Code Examples
 
-* function to start playing a track using the Howler audio library. Stops any previous track that was playing.
+* `home.page.ts` function to start playing a track using the Howler audio library. Stops any previous track that was playing. Includes strict initialisation of properties.
 
 ```typescript
-  activeTrack: Track = null;
-  player: Howl = null;
+  activeTrack: Track = { name: "", path: "" };
+  player: Howl = new Howl({
+    src: ["./assets/mp3/jazzy-sounds.mp3"],
+  });
   isPlaying = false;
+  progress = 0;
+  @ViewChild("range", { static: false }) range!: IonRange;
 
   start(track: Track) {
     if (this.player) {
