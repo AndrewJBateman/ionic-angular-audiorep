@@ -35,11 +35,12 @@
 
 * [Ionic v6](https://ionicframework.com/)
 * [Ionic/angular v6](https://ionicframework.com/)
-* [Angular v13](https://angular.io/)
+* [Angular v15](https://angular.io/)
 * [Howler v2](https://www.npmjs.com/package/howler)
 
 ## :floppy_disk: Setup
 
+* `npm i` to install dependencies
 * To start the server on _localhost://8100_ type: 'ionic serve'
 * To start the server on a mobile using Ionic devapp and connected via wifi, type: 'ionic serve --devapp'
 * The Ionic DevApp was installed on an Android device from the Google Play app store.
