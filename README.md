@@ -1,7 +1,7 @@
 # :zap: Ionic Angular Audio Reproduction
 
 * Ionic-Angular app to play mp3 audio files.
-* Code from [Simon Grimm](https://www.youtube.com/channel/UCZZPgUIorPao48a1tBYSDgg) - see [:clap: Inspiration](#clap-inspiration) below. Updated to latest Ionic/Angular + dependencies. Strict mode enabled which required strict initialisation of properties, e.g. range, player to avoid errors.
+* Code from [Simon Grimm](https://www.youtube.com/channel/UCZZPgUIorPao48a1tBYSDgg) - see [:clap: Inspiration](#clap-inspiration) below, with updates & refactoring - e.g. use of ternery expressions. Updated to latest Ionic/Angular + dependencies. Strict mode enabled which required strict initialisation of properties, e.g. range, player to avoid errors.
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/ionic-angular-audiorep?style=plastic)
@@ -12,15 +12,16 @@
 ## :page_facing_up: Table of contents
 
 * [:zap: Ionic Angular Audio Reproduction](#zap-ionic-angular-audio-reproduction)
-  * [:page_facing_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:page\_facing\_up: Table of contents](#page_facing_up-table-of-contents)
   * [:books: General info](#books-general-info)
   * [:camera: Screenshots](#camera-screenshots)
-  * [:signal_strength: Technologies](#signal_strength-technologies)
-  * [:floppy_disk: Setup](#floppy_disk-setup)
+  * [:signal\_strength: Technologies](#signal_strength-technologies)
+  * [:floppy\_disk: Setup](#floppy_disk-setup)
   * [:computer: Code Examples](#computer-code-examples)
   * [:cool: Features](#cool-features)
-  * [:clipboard: Status & To-do list](#clipboard-status--to-do-list)
+  * [:clipboard: Status \& To-do list](#clipboard-status--to-do-list)
   * [:clap: Inspiration](#clap-inspiration)
+  * [:file\_folder: License](#file_folder-license)
   * [:envelope: Contact](#envelope-contact)
 
 ## :books: General info
@@ -33,9 +34,8 @@
 
 ## :signal_strength: Technologies
 
-* [Ionic v6](https://ionicframework.com/)
-* [Ionic/angular v6](https://ionicframework.com/)
-* [Angular v15](https://angular.io/)
+* [Ionic/angular v7](https://ionicframework.com/)
+* [Angular v16](https://angular.io/)
 * [Howler v2](https://www.npmjs.com/package/howler)
 
 ## :floppy_disk: Setup
@@ -47,35 +47,12 @@
 
 ## :computer: Code Examples
 
-* `home.page.ts` function to start playing a track using the Howler audio library. Stops any previous track that was playing. Includes strict initialisation of properties.
+* `home.page.ts` function to toggle Howl player play and pause functions
 
 ```typescript
-  activeTrack: Track = { name: "", path: "" };
-  player: Howl = new Howl({
-    src: ["./assets/mp3/jazzy-sounds.mp3"],
-  });
-  isPlaying = false;
-  progress = 0;
-  @ViewChild("range", { static: false }) range!: IonRange;
-
-  start(track: Track) {
-    if (this.player) {
-      this.player.stop();
-    }
-    this.player = new Howl({
-      src: [track.path],
-      html5: true,
-      onplay: () => {
-        console.log('onplay');
-        this.isPlaying = true;
-        this.activeTrack = track;
-        this.updateProgress();
-      },
-      onend: () => {
-        console.log('End of track');
-      }
-    });
-    this.player.play();
+    togglePlayer(pause: Boolean) {
+    this.isPlaying = !pause;
+    pause ? this.player.pause() : this.player.play();
   }
 ```
 
@@ -98,4 +75,4 @@
 
 ## :envelope: Contact
 
-* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: `gomezbateman@yahoo.com`
