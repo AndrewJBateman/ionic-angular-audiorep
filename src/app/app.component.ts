@@ -8,7 +8,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
   selector: 'app-root',
   template: `
     <ion-app>
-      <ion-router-outlet></ion-router-outlet>
+      <ion-router-outlet />
     </ion-app>
   `,
 })

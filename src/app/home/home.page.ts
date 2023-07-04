@@ -60,31 +60,24 @@ export class HomePage {
     this.player.play();
   }
 
-  togglePlayer(pause: any) {
+  togglePlayer(pause: Boolean) {
     this.isPlaying = !pause;
-    if (pause) {
-      this.player.pause();
-    } else {
-      this.player.play();
-    }
+    pause ? this.player.pause() : this.player.play();
   }
 
   next() {
     const index = this.playlist.indexOf(this.activeTrack);
-    if (index !== this.playlist.length - 1) {
-      this.start(this.playlist[index + 1]);
-    } else {
-      this.start(this.playlist[0]);
-    }
+    const lastIndex = this.playlist.length - 1;
+    index !== lastIndex
+      ? this.start(this.playlist[index + 1])
+      : this.start(this.playlist[0]);
   }
 
   prev() {
     const index = this.playlist.indexOf(this.activeTrack);
-    if (index > 0) {
-      this.start(this.playlist[index - 1]);
-    } else {
-      this.start(this.playlist[this.playlist.length - 1]);
-    }
+    index > 0
+      ? this.start(this.playlist[index - 1])
+      : this.start(this.playlist[this.playlist.length - 1]);
   }
 
   seek() {
